@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import SolarOrbit from "./SolarOrbit";
 import { FaBolt, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import RippleButton from "@/components/RippleButton";
 
 /**
@@ -45,30 +45,32 @@ export default function Hero() {
 
             {/* Typewriter line with fixed container to prevent jump */}
             <div className="mt-6 text-2xl text-gray-200/95 typewriter-container">
-              <Typed
-                strings={[
-                  "BSc Computer Science @ Texas A&M",
-                  "Data Analyst @ AAK",
-                  "Full-Stack Developer",
+              <TypeAnimation
+                sequence={[
+                  "Computer Science @ Texas A&M",
+                  1500,
                   "Automation Engineer",
-                  "Predictive Modelling Enthusiast",
-                  "Exploring AI & ML",
-                  "Building Scalable Solutions",
+                  1500,
+                  "Interstellar problem-solver",
+                  1500,
                 ]}
-                typeSpeed={40}
-                backSpeed={35}
-                loop
+                speed={50} // typing speed
+                deletionSpeed={40} // backspace speed
+                repeat={Infinity} // loop forever
+                wrapper="span"
+                className="block text-lg md:text-xl text-gray-300"
               />
             </div>
 
             {/* Subcopy */}
             <p className="mt-4 max-w-2xl text-gray-400">
-              Enhancing digital experiences that are smooth, scalable, and made to impress.
+              Enhancing digital experiences that are smooth, scalable, and made
+              to impress.
             </p>
 
             {/* Tech pills */}
             <div className="mt-6 flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Node.js', 'PostgreSQL'].map((t) => (
+              {["React", "TypeScript", "Node.js", "PostgreSQL"].map((t) => (
                 <span
                   key={t}
                   className="glass glow-hover rounded-full px-4 py-2 text-sm soft-label"
@@ -97,9 +99,9 @@ export default function Hero() {
             {/* Social icons */}
             <div className="mt-8 flex gap-4">
               {[
-                { Icon: FaGithub, href: '#' },
-                { Icon: FaLinkedin, href: '#' },
-                { Icon: FaInstagram, href: '#' },
+                { Icon: FaGithub, href: "#" },
+                { Icon: FaLinkedin, href: "#" },
+                { Icon: FaInstagram, href: "#" },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
