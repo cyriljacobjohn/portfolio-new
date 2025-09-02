@@ -60,7 +60,7 @@ export default function AboutSection() {
         >
           Hello fellow martian, welcome to my spaceship. I'm the captain and
           sole traveler of Cyril Space Escapades, a Computer Science graduate
-          from Texas A&M and Data Analyst at AAK. I started my journey through
+          from Texas A&M and Software Engineer. I started my journey through
           full‑stack development; now my ship is headed towards helping business
           processes and experimenting with predictive modelling. Come explore my
           past endeavours and current explorations!
