@@ -52,19 +52,19 @@ export default function PortfolioSection() {
         details: "#",
       },
       {
-        title: "Soccer Game Predictor",
+        title: "Premier League odds",
         description:
-          "Predicts the outcome of soccer games.",
+          "Predicts the outcome of premier league games.",
         image: "/comingsoon.png",
-        demo: "#",
+        demo: "https://github.com/cyriljacobjohn/premier-league-odds#",
         details: "#",
       },
       {
-        title: "Appointment Scheduler",
+        title: "Stock Price Predictor",
         description:
-          "Assissts users in managing appointments efficiently with a  chatbot.",
+          "Predicts the stock price based on new and live market",
         image: "/comingsoon.png",
-        demo: "#",
+        demo: "https://github.com/cyriljacobjohn/go-cloud-microservice",
         details: "#",
       },
     ],
