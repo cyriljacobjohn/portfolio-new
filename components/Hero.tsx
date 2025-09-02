@@ -37,9 +37,9 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="mt-6 text-5xl sm:text-6xl font-extrabold leading-tight">
-              <span className="block text-gray-100">Data</span>
+              <span className="block text-gray-100">Software</span>
               <span className="block bg-gradient-to-r from-accent to-accent2 bg-clip-text text-transparent">
-                Analyst
+                Engineer
               </span>
             </h1>
 
